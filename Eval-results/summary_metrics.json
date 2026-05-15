@@ -1,0 +1,147 @@
+{
+  "timestamp": "2025-12-11 21:22:13",
+  "specialists_used": [
+    {
+      "path": "/kaggle/input/latestspecialists/pytorch/default/1/specialist_win24-36_len30.pkl",
+      "anchor_len": 30,
+      "window": [
+        1,
+        28
+      ],
+      "max_len": 30
+    },
+    {
+      "path": "/kaggle/input/latestspecialists/pytorch/default/1/specialist_win30-48_len40.pkl",
+      "anchor_len": 40,
+      "window": [
+        1,
+        38
+      ],
+      "max_len": 40
+    },
+    {
+      "path": "/kaggle/input/latestspecialists/pytorch/default/1/specialist_win44-60_len52.pkl",
+      "anchor_len": 52,
+      "window": [
+        1,
+        50
+      ],
+      "max_len": 52
+    }
+  ],
+  "proj_dim": 128,
+  "blend_policy": "triangular",
+  "cv_folds": 5,
+  "tasks": [
+    {
+      "name": "YAP1_DMS_regression",
+      "type": "regression",
+      "task": "YAP1_DMS_regression",
+      "transform": null,
+      "RMSE": 0.5076851819355164,
+      "MAE": 0.39406407578745767,
+      "R2": 0.22446222874105004,
+      "Spearman": 0.4771503512001294,
+      "Pearson": 0.531264758229236,
+      "folds": [
+        {
+          "fold": 1,
+          "RMSE": 0.5372294499465177,
+          "MAE": 0.4232658940261371,
+          "R2": 0.015070539904707525,
+          "Spearman": 0.45918178452425035,
+          "Pearson": 0.4237113319385701,
+          "feat_set": "fuse"
+        },
+        {
+          "fold": 2,
+          "RMSE": 0.5275413241822583,
+          "MAE": 0.3811010788047395,
+          "R2": 0.18828487650059544,
+          "Spearman": 0.5140997161545108,
+          "Pearson": 0.4844891101825906,
+          "feat_set": "fuse"
+        },
+        {
+          "fold": 3,
+          "RMSE": 0.49918992419008495,
+          "MAE": 0.37510405816742093,
+          "R2": 0.2689927397070343,
+          "Spearman": 0.45928998649430836,
+          "Pearson": 0.5381715415000494,
+          "feat_set": "fuse"
+        },
+        {
+          "fold": 4,
+          "RMSE": 0.5505221824641239,
+          "MAE": 0.43073603325472054,
+          "R2": 0.3637295255306341,
+          "Spearman": 0.4801273393787382,
+          "Pearson": 0.6388359240836006,
+          "feat_set": "fuse"
+        },
+        {
+          "fold": 5,
+          "RMSE": 0.423943028894597,
+          "MAE": 0.3601133146842701,
+          "R2": 0.28623346206227873,
+          "Spearman": 0.47305292944883925,
+          "Pearson": 0.5711158834413699,
+          "feat_set": "fuse"
+        }
+      ]
+    },
+    {
+      "name": "YAP1_DMS_classification_q33",
+      "type": "classification",
+      "task": "YAP1_DMS_classification_q33",
+      "AUROC": 0.7299833776595743,
+      "AUPRC": 0.6096467561251633,
+      "F1": 0.4156520847222934,
+      "Brier": 0.19426363079202397,
+      "ECE": 0.06601918181251852,
+      "folds": [
+        {
+          "fold": 1,
+          "AUROC": 0.7795833333333333,
+          "AUPRC": 0.6752608865181559,
+          "F1": 0.5405405405405406,
+          "Brier": 0.1833600162399053,
+          "feat_set": "fuse"
+        },
+        {
+          "fold": 2,
+          "AUROC": 0.6779166666666666,
+          "AUPRC": 0.6666547025717107,
+          "F1": 0.47058823529411764,
+          "Brier": 0.1958034140079817,
+          "feat_set": "fuse"
+        },
+        {
+          "fold": 3,
+          "AUROC": 0.6885106382978723,
+          "AUPRC": 0.5005287372825545,
+          "F1": 0.25806451612903225,
+          "Brier": 0.21014035786271423,
+          "feat_set": "fuse"
+        },
+        {
+          "fold": 4,
+          "AUROC": 0.7469618055555555,
+          "AUPRC": 0.5943348833959257,
+          "F1": 0.48648648648648646,
+          "Brier": 0.19327042527642094,
+          "feat_set": "fuse"
+        },
+        {
+          "fold": 5,
+          "AUROC": 0.7569444444444444,
+          "AUPRC": 0.61145457085747,
+          "F1": 0.3225806451612903,
+          "Brier": 0.1887439405730978,
+          "feat_set": "fuse"
+        }
+      ]
+    }
+  ]
+}

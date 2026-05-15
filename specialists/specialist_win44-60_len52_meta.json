@@ -1,0 +1,26 @@
+{
+  "path": "/kaggle/working/specialists/specialist_win44-60_len52.pkl",
+  "window": [
+    44,
+    60
+  ],
+  "anchor_len": 52,
+  "max_len": 52,
+  "val_ppl_best": 8.942660231187123,
+  "n_window": 121485,
+  "n_train": 97188,
+  "n_val": 24297,
+  "freeze_head_A": true,
+  "freeze_head_B": true,
+  "head_L2_B": 0.0,
+  "epochs_A": 10,
+  "epochs_B": 100,
+  "near_delta": 2,
+  "near_target_min": 1600,
+  "batch_tokens": 8192,
+  "vocab_size": 24,
+  "chi_mps": 32,
+  "chim": 32,
+  "vocab_hash": "b362a7a6dc",
+  "timestamp": "2025-08-26 08:56:58"
+}

@@ -1,0 +1,57 @@
+{
+  "timestamp": "2025-12-11 21:08:46",
+  "n_total": 362,
+  "n_scored": 362,
+  "span_min_pos": 170,
+  "span_max_pos": 203,
+  "span_len": 34,
+  "max_supported_len": 52,
+  "fitness_higher_is_better": true,
+  "specialist_paths": [
+    "/kaggle/input/alltrainedmodels/other/default/1/specialist_win24-36_len30.pkl",
+    "/kaggle/input/alltrainedmodels/other/default/1/specialist_win30-48_len40.pkl",
+    "/kaggle/input/alltrainedmodels/other/default/1/specialist_win44-60_len52.pkl"
+  ],
+  "dlogp_ens_spearman": 0.1550342190828256,
+  "dlogp_ens_spearman_ci95": [
+    0.05988193003648584,
+    0.25697463445101526
+  ],
+  "dlogp_ens_pearson": 0.11743812603817794,
+  "dlogp_ens_pearson_ci95": [
+    0.029948319012384934,
+    0.21676126677912572
+  ],
+  "dlogp_ens_macro_spearman_mean": 0.04044321004073327,
+  "dlogp_ens_macro_spearman_weighted": 0.015240165770527432,
+  "dlogp_ens_global_spearman_z": -0.014037608927911688,
+  "dlogp_ens_global_pearson_z": -0.020680393382453463,
+  "sitelogodds_ens_spearman": 0.15073610648573327,
+  "sitelogodds_ens_spearman_ci95": [
+    0.047240120876861684,
+    0.2503930306346004
+  ],
+  "sitelogodds_ens_pearson": 0.1602921253920226,
+  "sitelogodds_ens_pearson_ci95": [
+    0.05135148667562597,
+    0.2830653228295314
+  ],
+  "sitelogodds_ens_macro_spearman_mean": 0.02416932998202345,
+  "sitelogodds_ens_macro_spearman_weighted": 0.014747385773411307,
+  "sitelogodds_ens_global_spearman_z": 0.027028073067661185,
+  "sitelogodds_ens_global_pearson_z": -0.00381167923293408,
+  "combo_zmean_ens_spearman": 0.19180532997835514,
+  "combo_zmean_ens_spearman_ci95": [
+    0.0954070269573945,
+    0.2906852318204434
+  ],
+  "combo_zmean_ens_pearson": 0.17459411934515945,
+  "combo_zmean_ens_pearson_ci95": [
+    0.07053240518412571,
+    0.2870577751571551
+  ],
+  "combo_zmean_ens_macro_spearman_mean": 0.025698046363681042,
+  "combo_zmean_ens_macro_spearman_weighted": 0.002452527565548261,
+  "combo_zmean_ens_global_spearman_z": -0.02149751949752228,
+  "combo_zmean_ens_global_pearson_z": -0.03756223605996508
+}

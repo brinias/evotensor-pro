@@ -1,0 +1,28 @@
+{
+  "name": "E.coli UTI (robust, boosted kmax + tox)",
+  "type": "bacteria",
+  "readout": "CFU_over_time",
+  "growth_model": "logistic",
+  "params": { "r_per_h": 0.12, "K": 1000000000, "N0": 1000000 },
+  "pk": { "model": "one_compartment", "kel_per_h": 0.05 },
+  "pd": {
+    "ec50": {
+      "from": ["MIC_Ecoli_uM", "MIC_pred_uM", "MIC_", "amp_head_prob", "AMP_activity_prob", "prob"],
+      "min_uM": 0.25,
+      "max_uM": 256,
+      "mic_divisor": 4
+    },
+    "kmax": {
+      "base": 0.06,
+      "scale_prob": 0.12,
+      "from": ["amp_head_prob", "AMP_activity_prob", "prob"]
+    },
+    "hill": { "base": 1.3 }
+  },
+  "safety": {
+    "tox_from": ["is_tox_head_prob"],
+    "alpha": 0.08,
+    "beta": 8.0
+  },
+  "endpoint_hours": 24
+}

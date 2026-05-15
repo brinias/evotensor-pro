@@ -1,0 +1,56 @@
+{
+  "base_model": "/kaggle/input/alltrainedmodels/other/default/1/production_model_tuned.pkl",
+  "specialists": [
+    {
+      "window": [
+        24,
+        36
+      ],
+      "anchor_len": 30,
+      "path": "/kaggle/working/specialists/specialist_win24-36_len30.pkl",
+      "val_ppl_best": 5.5826764083351925,
+      "freeze_head_A": true,
+      "freeze_head_B": true,
+      "head_L2_B": 0.0,
+      "epochs_A": 10,
+      "epochs_B": 100,
+      "near_delta": 2,
+      "near_target_min": 1600,
+      "batch_tokens": 8192
+    },
+    {
+      "window": [
+        30,
+        48
+      ],
+      "anchor_len": 40,
+      "path": "/kaggle/working/specialists/specialist_win30-48_len40.pkl",
+      "val_ppl_best": 6.668455278665383,
+      "freeze_head_A": true,
+      "freeze_head_B": true,
+      "head_L2_B": 0.0,
+      "epochs_A": 10,
+      "epochs_B": 100,
+      "near_delta": 2,
+      "near_target_min": 1600,
+      "batch_tokens": 8192
+    },
+    {
+      "window": [
+        44,
+        60
+      ],
+      "anchor_len": 52,
+      "path": "/kaggle/working/specialists/specialist_win44-60_len52.pkl",
+      "val_ppl_best": 8.944015047580878,
+      "freeze_head_A": true,
+      "freeze_head_B": true,
+      "head_L2_B": 0.0,
+      "epochs_A": 10,
+      "epochs_B": 100,
+      "near_delta": 2,
+      "near_target_min": 1600,
+      "batch_tokens": 8192
+    }
+  ]
+}
